@@ -1,0 +1,18 @@
+{
+    "default": {
+        "--ibconnection": "/SNKK-1ca\\NKK_buh_devN",
+        "--db-user": "АбрамовГС (директор)",
+        "--db-pwd": "",
+        "--ordinaryapp": "0",
+        "--v8version": "8.3.20.2180"
+    },
+    "session": {
+        "--ras": "nkk-1ca:1545",
+        "--db": "NKK_buh_devN",
+        "--uccode": "123",
+        "--cluster-name": "Локальный кластер"
+    },
+    "decompileext": {
+        "--uccode": "123"
+    }
+}
