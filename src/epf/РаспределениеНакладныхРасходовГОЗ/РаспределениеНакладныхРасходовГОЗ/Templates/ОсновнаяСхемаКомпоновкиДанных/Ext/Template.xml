@@ -7,20 +7,6 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>НоменклатурнаяГруппа</dataPath>
-			<field>НоменклатурнаяГруппа</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатурная группа</v8:content>
-				</v8:item>
-			</title>
-			<role>
-				<dcscom:dimension>true</dcscom:dimension>
-				<dcscom:ignoreNullValues>true</dcscom:ignoreNullValues>
-			</role>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>СчетДт</dataPath>
 			<field>СчетДт</field>
 			<role>
@@ -181,7 +167,6 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	ХозрасчетныйОборотыДтКт.СубконтоДт1 КАК НоменклатурнаяГруппа,
 	ХозрасчетныйОборотыДтКт.СуммаОборот КАК СуммаОборот
 ПОМЕСТИТЬ ВТ_ОплатаТрудаНГ
 ИЗ
@@ -194,7 +179,7 @@
 			СчетКТ.Код &lt;&gt; "25",
 			,
 			Организация = &amp;Организация
-				И СубконтоДт2.ВидРасходовНУ = &amp;ВидРасходовНУ) КАК ХозрасчетныйОборотыДтКт
+				И выразить(СубконтоДт2 как справочник.статьиЗатрат).ВидРасходовНУ = &amp;ВидРасходовНУ и выразить(СубконтоДт1 как справочник.номенклатурныеГруппы) в(&amp;ГОЗ)) КАК ХозрасчетныйОборотыДтКт
 ;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -253,7 +238,6 @@
 	ВТ_накладные.ВидЗатрат КАК ВидыЗатрат,
 	ВТ_накладные.Регистратор КАК Регистратор,
 	ВТ_накладные.СчетДт КАК СчетДт,
-	ВТ_ОплатаТрудаНГ.НоменклатурнаяГруппа КАК НоменклатурнаяГруппа,
 	ВЫРАЗИТЬ(ВТ_накладные.СуммаОборот * ВТ_ОплатаТрудаНГ.СуммаОборот / ВТ_ОплатаТрудаВсего.СуммаОборот КАК ЧИСЛО(15, 2)) КАК СуммаОтнесения,
 	ВТ_ОплатаТрудаВсего.СуммаОборот КАК БазаДляРаспределения,
 	ВТ_ОплатаТрудаНГ.СуммаОборот КАК СуммаВБазе,
@@ -264,8 +248,7 @@
 		ПО (ИСТИНА)
 		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ОплатаТрудаВсего КАК ВТ_ОплатаТрудаВсего
 		ПО (ИСТИНА)
-ГДЕ
-	ВТ_ОплатаТрудаНГ.НоменклатурнаяГруппа В(&amp;ГОЗ)</query>
+</query>
 		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
 	</dataSet>
 	<totalField>
@@ -343,6 +326,9 @@
 				<v8:content>ГОЗ</v8:content>
 			</v8:item>
 		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.НоменклатурныеГруппы</v8:Type>
+		</valueType>
 		<useRestriction>false</useRestriction>
 		<valueListAllowed>true</valueListAllowed>
 	</parameter>
@@ -368,6 +354,9 @@
 				<v8:content>Список статей</v8:content>
 			</v8:item>
 		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СтатьиЗатрат</v8:Type>
+		</valueType>
 		<useRestriction>false</useRestriction>
 		<valueListAllowed>true</valueListAllowed>
 	</parameter>
