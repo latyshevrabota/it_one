@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.13">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Период" id="81">
+			<DataPath>Объект.Период</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="82"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="83"/>
+		</InputField>
+		<UsualGroup name="ГруппаЗагрузки" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа загрузки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗагрузкиРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="ПутьКДанным" id="1">
+					<DataPath>Объект.ПутьКДанным</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ContextMenu name="ПутьКДаннымКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПутьКДаннымРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="StartChoice">ПутьКДаннымНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<Button name="ФормаЗагрузить" id="32">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.Загрузить</CommandName>
+					<ExtendedTooltip name="ФормаЗагрузитьРасширеннаяПодсказка" id="33"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТШ" id="4">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТШ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТШКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="ТШКоманднаяПанель" id="6">
+				<ChildItems>
+					<Button name="ФормаЗагрузить1" id="39">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Загрузить1</CommandName>
+						<ExtendedTooltip name="ФормаЗагрузить1РасширеннаяПодсказка" id="40"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТШРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="ТШСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>ТШ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТШСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТШСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТШСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>ТШ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТШСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТШСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТШУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>ТШ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТШУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТШУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТШНомерСтроки" id="17">
+					<DataPath>Объект.ТШ.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШНомерСтрокиКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТШНомерСтрокиРасширеннаяПодсказка" id="19"/>
+				</LabelField>
+				<InputField name="ТШФИО" id="20">
+					<DataPath>Объект.ТШ.ФИО</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШФИОКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТШФИОРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТШПериод" id="26">
+					<DataPath>Объект.ТШ.Период</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШПериодКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТШПериодРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТШПроект" id="23">
+					<DataPath>Объект.ТШ.Проект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШПроектКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТШПроектРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТШИдентификаторПроекта" id="41">
+					<DataPath>Объект.ТШ.ИдентификаторПроекта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШИдентификаторПроектаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТШИдентификаторПроектаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТШПроцентРаспределения" id="29">
+					<DataPath>Объект.ТШ.ПроцентРаспределения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШПроцентРаспределенияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТШПроцентРаспределенияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТШТипВыставленияСчета" id="44">
+					<DataPath>Объект.ТШ.ТипВыставленияСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШТипВыставленияСчетаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТШТипВыставленияСчетаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Button name="ЗаполнитьСоответствие" id="84">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ЗаполнитьСоответствие</CommandName>
+			<ExtendedTooltip name="ЗаполнитьСоответствиеРасширеннаяПодсказка" id="85"/>
+		</Button>
+		<Table name="ТаблицаСоответствия" id="47">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТаблицаСоответствия</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСоответствияКонтекстноеМеню" id="48"/>
+			<AutoCommandBar name="ТаблицаСоответствияКоманднаяПанель" id="49"/>
+			<ExtendedTooltip name="ТаблицаСоответствияРасширеннаяПодсказка" id="50"/>
+			<SearchStringAddition name="ТаблицаСоответствияСтрокаПоиска" id="51">
+				<AdditionSource>
+					<Item>ТаблицаСоответствия</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСоответствияСтрокаПоискаКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="ТаблицаСоответствияСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСоответствияСостояниеПросмотра" id="54">
+				<AdditionSource>
+					<Item>ТаблицаСоответствия</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСоответствияСостояниеПросмотраКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ТаблицаСоответствияСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСоответствияУправлениеПоиском" id="57">
+				<AdditionSource>
+					<Item>ТаблицаСоответствия</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСоответствияУправлениеПоискомКонтекстноеМеню" id="58"/>
+				<ExtendedTooltip name="ТаблицаСоответствияУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТаблицаСоответствияНомерСтроки" id="60">
+					<DataPath>Объект.ТаблицаСоответствия.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияНомерСтрокиКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ТаблицаСоответствияНомерСтрокиРасширеннаяПодсказка" id="62"/>
+				</LabelField>
+				<InputField name="ТаблицаСоответствияСотрудник" id="63">
+					<DataPath>Объект.ТаблицаСоответствия.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияСотрудникКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ТаблицаСоответствияСотрудникРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияОсновноеСтредство" id="75">
+					<DataPath>Объект.ТаблицаСоответствия.ОсновноеСтредство</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияОсновноеСтредствоКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="ТаблицаСоответствияОсновноеСтредствоРасширеннаяПодсказка" id="77"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияНачисленнаяАмортизация" id="78">
+					<DataPath>Объект.ТаблицаСоответствия.НачисленнаяАмортизация</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияНачисленнаяАмортизацияКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="ТаблицаСоответствияНачисленнаяАмортизацияРасширеннаяПодсказка" id="80"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияПроцент" id="72">
+					<DataPath>Объект.ТаблицаСоответствия.Процент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияПроцентКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ТаблицаСоответствияПроцентРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияНоменклатурнаяГруппа" id="66">
+					<DataPath>Объект.ТаблицаСоответствия.НоменклатурнаяГруппа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияНоменклатурнаяГруппаКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ТаблицаСоответствияНоменклатурнаяГруппаРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияСпособОтражения" id="69">
+					<DataPath>Объект.ТаблицаСоответствия.СпособОтражения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияСпособОтраженияКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="ТаблицаСоответствияСпособОтраженияРасширеннаяПодсказка" id="71"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<SpreadSheetDocumentField name="ТабличныйДок" id="36">
+			<DataPath>ТабличныйДок</DataPath>
+			<ContextMenu name="ТабличныйДокКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ТабличныйДокРасширеннаяПодсказка" id="38"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РаботаСТШ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ПутьКДанным</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТабличныйДок" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Табличный док</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Загрузить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить</Action>
+		</Command>
+		<Command name="Загрузить1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Загрузить1</Action>
+		</Command>
+		<Command name="ЗаполнитьСоответствие" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить соответствие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить соответствие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСоответствие</Action>
+		</Command>
+	</Commands>
+</Form>
