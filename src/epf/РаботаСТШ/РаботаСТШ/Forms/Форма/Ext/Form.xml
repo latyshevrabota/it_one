@@ -137,11 +137,23 @@
 					<ContextMenu name="ТаблицаСоответствияНачисленнаяАмортизацияКонтекстноеМеню" id="79"/>
 					<ExtendedTooltip name="ТаблицаСоответствияНачисленнаяАмортизацияРасширеннаяПодсказка" id="80"/>
 				</InputField>
+				<InputField name="ТаблицаСоответствияТабельныйНомер" id="150">
+					<DataPath>Объект.ТаблицаСоответствия.ТабельныйНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияТабельныйНомерКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="ТаблицаСоответствияТабельныйНомерРасширеннаяПодсказка" id="152"/>
+				</InputField>
 				<InputField name="ТаблицаСоответствияСотрудник" id="63">
 					<DataPath>Объект.ТаблицаСоответствия.Сотрудник</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаСоответствияСотрудникКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="ТаблицаСоответствияСотрудникРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияФизическоеЛицо" id="147">
+					<DataPath>Объект.ТаблицаСоответствия.ФизическоеЛицо</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияФизическоеЛицоКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ТаблицаСоответствияФизическоеЛицоРасширеннаяПодсказка" id="149"/>
 				</InputField>
 				<InputField name="ТаблицаСоответствияКоэфициентПоМОЛ" id="123">
 					<DataPath>Объект.ТаблицаСоответствия.КоэфициентПоМОЛ</DataPath>
@@ -172,6 +184,12 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаСоответствияПроцентКонтекстноеМеню" id="73"/>
 					<ExtendedTooltip name="ТаблицаСоответствияПроцентРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<InputField name="ТаблицаСоответствияТипВыставленияСчетов" id="153">
+					<DataPath>Объект.ТаблицаСоответствия.ТипВыставленияСчетов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаСоответствияТипВыставленияСчетовКонтекстноеМеню" id="154"/>
+					<ExtendedTooltip name="ТаблицаСоответствияТипВыставленияСчетовРасширеннаяПодсказка" id="155"/>
 				</InputField>
 				<InputField name="ТаблицаСоответствияСчетДт" id="92">
 					<DataPath>Объект.ТаблицаСоответствия.СчетДт</DataPath>
@@ -283,6 +301,12 @@
 				<ExtendedTooltip name="ТШУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 			</SearchControlAddition>
 			<ChildItems>
+				<InputField name="ТШТабельныйНомер" id="141">
+					<DataPath>Объект.ТШ.ТабельныйНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШТабельныйНомерКонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="ТШТабельныйНомерРасширеннаяПодсказка" id="143"/>
+				</InputField>
 				<LabelField name="ТШНомерСтроки" id="17">
 					<DataPath>Объект.ТШ.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -294,6 +318,12 @@
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТШФИОКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="ТШФИОРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТШСотрудник" id="144">
+					<DataPath>Объект.ТШ.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТШСотрудникКонтекстноеМеню" id="145"/>
+					<ExtendedTooltip name="ТШСотрудникРасширеннаяПодсказка" id="146"/>
 				</InputField>
 				<InputField name="ТШФизическоеЛицо" id="86">
 					<DataPath>Объект.ТШ.ФизическоеЛицо</DataPath>
@@ -332,7 +362,7 @@
 					<ExtendedTooltip name="ТШПроцентРаспределенияРасширеннаяПодсказка" id="31"/>
 				</InputField>
 				<InputField name="ТШТипВыставленияСчета" id="44">
-					<DataPath>Объект.ТШ.ТипВыставленияСчета</DataPath>
+					<DataPath>Объект.ТШ.ТипВыставленияСчетов</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТШТипВыставленияСчетаКонтекстноеМеню" id="45"/>
 					<ExtendedTooltip name="ТШТипВыставленияСчетаРасширеннаяПодсказка" id="46"/>
