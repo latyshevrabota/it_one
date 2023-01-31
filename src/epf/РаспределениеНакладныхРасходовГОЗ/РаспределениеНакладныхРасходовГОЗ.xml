@@ -6,13 +6,13 @@
 				<xr:ClassId>e41aff26-25cf-4bb6-b6c1-3f478a75f374</xr:ClassId>
 				<xr:ObjectId>40afd7c4-d82e-47e0-a4a5-dd41d08d3f5e</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalReportObject.РаспределениеГОЗ" category="Object">
+			<xr:GeneratedType name="ExternalReportObject.РаспределениеГОЗ_" category="Object">
 				<xr:TypeId>022fd15d-5a8c-4ef9-af5c-699b91e70819</xr:TypeId>
 				<xr:ValueId>54dfd640-1109-4615-aab1-2b8f1c432211</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>РаспределениеГОЗ</Name>
+			<Name>РаспределениеГОЗ_</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -22,7 +22,7 @@
 			<Comment/>
 			<DefaultForm/>
 			<AuxiliaryForm/>
-			<MainDataCompositionSchema>ExternalReport.РаспределениеГОЗ.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<MainDataCompositionSchema>ExternalReport.РаспределениеГОЗ_.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
 			<DefaultSettingsForm/>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm/>

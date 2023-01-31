@@ -1,6 +1,6 @@
 {
     "default": {
-        "--ibconnection": "/SNKK-1ca\\NKK_buh_devN",
+        "--ibconnection": "/SNKK-1ca\\buh_corp_demo",
         "--db-user": "АбрамовГС (директор)",
         "--db-pwd": "",
         "--ordinaryapp": "0",

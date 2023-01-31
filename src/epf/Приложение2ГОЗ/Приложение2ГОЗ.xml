@@ -6,13 +6,13 @@
 				<xr:ClassId>e41aff26-25cf-4bb6-b6c1-3f478a75f374</xr:ClassId>
 				<xr:ObjectId>0bbcfee0-3b93-47c6-9c9c-9b56ca800fbb</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalReportObject.Приложение2ГОЗ" category="Object">
+			<xr:GeneratedType name="ExternalReportObject.Приложение2ГОЗ_" category="Object">
 				<xr:TypeId>ae577a0b-8791-4ee3-ba5c-6c4f9d3ce8a9</xr:TypeId>
 				<xr:ValueId>30d5b698-d497-46c4-bba8-e95549d69f13</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Приложение2ГОЗ</Name>
+			<Name>Приложение2ГОЗ_</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -22,7 +22,7 @@
 			<Comment/>
 			<DefaultForm/>
 			<AuxiliaryForm/>
-			<MainDataCompositionSchema>ExternalReport.Приложение2ГОЗ.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
+			<MainDataCompositionSchema>ExternalReport.Приложение2ГОЗ_.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
 			<DefaultSettingsForm/>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm/>
